@@ -14,7 +14,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -25,7 +25,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
-### Screenshot
+### Screenshots
 
 ![Dark Mode Image](sol-images/image-1.png)
 Screenshot 1 of solution page.
