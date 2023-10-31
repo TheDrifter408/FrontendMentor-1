@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
+</head>
+<body>
+  <main>
+    <section class="container">
+      <div class="container__header">
+        <div class="container__title">
+          <h1>Social Media Dashboard</h1>
+          <p class="dark-blue-text text-700">Total Followers: 23,004</p>
+        </div>
+        <div class="dark-mode-container">
+          <p class="dark-white-text text-700">Dark Mode</p>
+          <div class="btn-container">
+            <button class="btn" onclick="DarkMode()"></button>
+          </div>
+        </div>
+      </div>
+      <article class="card__container display-flex">
+        <!--Facebook-->
+        <div class="card facebook-border">
+          <div class="card__heading">
+            <img src="./images/icon-facebook.svg" alt="facebook-icon">
+            <p class="dark-blue-text text-700">@nathanf</p>
+          </div>
+          <div class="card__content">
+            <p>1987</p>
+            <p class="dark-blue-text text-400 letter-space">Followers</p>
+          </div>
+          <div class="card__footer">
+            <img src="./images/icon-up.svg" alt="increase-icon">
+            <p class="dark-lime-green-text text-700">12 Today</p>
+          </div>
+        </div>
+        <!--Twitter-->
+        <div class="card twitter-border">
+          <div class="card__heading">
+            <img src="./images/icon-twitter.svg" alt="twitter-icon">
+            <p class="dark-blue-text text-700">@nathanf</p>
+          </div>
+          <div class="card__content">
+            <p>1044</p>
+            <p class="dark-blue-text text-400 letter-space">Followers</p>
+          </div>
+          <div class="card__footer">
+            <img src="./images/icon-up.svg" alt="increase-icon">
+            <p class="dark-lime-green-text text-700">99 Today</p>
+          </div>
+        </div>
+        <!--Instagram-->
+        <div class="instagram-border card">
+          <div class="card__heading">
+            <img src="./images/icon-instagram.svg" alt="instagram-icon">
+            <p class="dark-blue-text text-700">@realnathanf</p>
+          </div>
+          <div class="card__content">
+            <p>11k</p>
+            <p class="dark-blue-text text-400 letter-space">Followers</p>
+          </div>
+          <div class="card__footer">
+            <img src="./images/icon-up.svg" alt="increase-icon">
+            <p class="dark-lime-green-text text-700">1099 Today</p>
+          </div>
+        </div>
+        <!--Youtube-->
+        <div class="card youtube-border">
+          <div class="card__heading">
+            <img src="./images/icon-youtube.svg" alt="youtube-icon">
+            <p class="dark-blue-text text-700">Nathan F.</p>
+          </div>
+          <div class="card__content">
+            <p>8239</p>
+            <p class="dark-blue-text text-400 letter-space">Subscribers</p>
+          </div>
+          <div class="card__footer">
+            <img src="./images/icon-down.svg" alt="increase-icon">
+            <p class="dark-bright-red-text text-700">144 Today</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!--Overview Section-->
+    <section class="container">
+      <div class="container__header-overview">
+        <div class="container__title">
+          <h1>Overview - Today</h1>
+        </div>
+      </div>
+      <article class="card__container display-grid">
+        <!--card-->
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Page Views</p>
+            <img src="./images/icon-facebook.svg" alt="facebook-icon">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>87</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">3%</p>
+            </div>
+          </div>
+        </div>
+        <!---------->
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Likes</p>
+            <img src="./images/icon-facebook.svg" alt="facebook-icon">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>52</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">2%</p>
+            </div>
+          </div>
+        </div>
+        <!------------>
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Likes</p>
+            <img src="./images/icon-instagram.svg" alt="instagram-icon">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>5462</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">2257%</p>
+            </div>
+          </div>
+        </div>
+        <!---------->
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Profile Views</p>
+            <img src="./images/icon-instagram.svg" alt="instagram-icon">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>52k</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">1375%</p>
+            </div>
+          </div>
+        </div>
+        <!---------->
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Retweets</p>
+            <img src="./images/icon-twitter.svg" alt="twittericon-twitter.svg-icon">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>117</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">303%</p>
+            </div>
+          </div>
+        </div>
+        <!---------->
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Likes</p>
+            <img src="./images/icon-twitter.svg" alt="twittericon-twitter.svg-icon">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>507</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">553%</p>
+            </div>
+          </div>
+        </div>
+        <!---------->
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Likes</p>
+            <img src="./images/icon-twitter.svg" alt="twittericon-twitter.svg-icon">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>507</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">553%</p>
+            </div>
+          </div>
+        </div>
+        <!---------->
+        <div class="card__overview">
+          <div class="card__overview_heading">
+            <p class="dark-blue-text text-700">Likes</p>
+            <img src="./images/icon-youtube.svg" alt="icon-youtube.svg">
+          </div>
+          <div class="card__overview-footer">
+            <div class="card__overview-content">
+              <p>107</p>
+            </div>
+            <div class="display-flex">
+              <img src="./images/icon-up.svg" alt="increase-icon">
+              <p class="dark-lime-green-text text-700">19%</p>
+            </div>
+          </div>
+        </div>
+        <!---------->
+      </article>
+    </section>
+  </main>
+  <script defer src="index.js"></script>
+</body>
+</html>
